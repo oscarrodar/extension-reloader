@@ -1,0 +1,25 @@
+{
+    "name": "Extension Reloader",
+    "version": "0.1",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_icon": "icon48.png",
+        "default_title": "Reload extension"
+    },
+    "icons": {
+        "128": "icon48.png"
+    },
+    "options_page": "options.html",
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E"
+            }
+        }
+    },
+    "permissions": ["management"]
+}
